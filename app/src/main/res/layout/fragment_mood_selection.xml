@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MoodSelectionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Morning!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_light"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling?"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary_light"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Mood Selection Grid -->
+        <GridLayout
+            android:id="@+id/mood_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginBottom="32dp">
+
+            <!-- Happy -->
+            <LinearLayout
+                android:id="@+id/card_happy"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_happy"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😊"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Happy"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Excited -->
+            <LinearLayout
+                android:id="@+id/card_excited"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_excited"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🤩"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Excited"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Sad -->
+            <LinearLayout
+                android:id="@+id/card_sad"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_sad"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😞"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sad"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Angry -->
+            <LinearLayout
+                android:id="@+id/card_angry"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_angry"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😡"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Angry"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Calm -->
+            <LinearLayout
+                android:id="@+id/card_calm"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_calm"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😌"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calm"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Surprised -->
+            <LinearLayout
+                android:id="@+id/card_surprised"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_surprised"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😮"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Surprised"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Confused -->
+            <LinearLayout
+                android:id="@+id/card_confused"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_confused"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😕"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confused"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Sleepy -->
+            <LinearLayout
+                android:id="@+id/card_sleepy"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_sleepy"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😴"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleepy"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Grateful -->
+            <LinearLayout
+                android:id="@+id/card_grateful"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/mood_card_grateful"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥰"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grateful"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary_light"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

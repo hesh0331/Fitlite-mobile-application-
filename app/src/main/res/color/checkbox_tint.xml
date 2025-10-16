@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Checked: vivid accent for strong contrast on white -->
+    <item android:state_checked="true" android:color="@color/accent_orange"/>
+    <!-- Disabled: subtle grey -->
+    <item android:state_enabled="false" android:color="#B3A9A9A9"/>
+    <!-- Default (unchecked) -->
+    <item android:color="#8A000000"/>
+</selector>
+

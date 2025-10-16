@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">FitLife</string>
+    
+    <!-- Navigation -->
+    <string name="nav_habits">Habits</string>
+    <string name="nav_mood">Mood</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Widget -->
+    <string name="widget_description">FitLife Progress Widget</string>
+    
+    <!-- Habits -->
+    <string name="habits_title">Habits</string>
+    <string name="habits_description">Track your daily habits and build healthy routines</string>
+    <string name="habits_progress_title">Today\'s Progress</string>
+    <string name="habits_progress_count">%1$d / %2$d completed</string>
+    <string name="habits_add">Add Habit</string>
+    <string name="habits_edit">Edit</string>
+    <string name="habits_delete">Delete</string>
+    <string name="habits_complete">Mark as complete</string>
+    <string name="habits_coming_soon">🚀 Coming Soon!</string>
+    
+    <!-- Habit Dialog -->
+    <string name="habit_dialog_title">Add Habit</string>
+    <string name="habit_dialog_edit_title">Edit Habit</string>
+    <string name="habit_dialog_name_hint">Habit Name</string>
+    <string name="habit_dialog_description_hint">Description (Optional)</string>
+    <string name="habit_dialog_category">Category</string>
+    <string name="habit_dialog_frequency">Frequency</string>
+    <string name="habit_dialog_target_hint">Target Value</string>
+    <string name="habit_dialog_unit_hint">Unit (e.g., glasses, minutes, times)</string>
+    <string name="habit_dialog_save">Save</string>
+    <string name="habit_dialog_cancel">Cancel</string>
+    <string name="habit_dialog_name_error">Habit name is required</string>
+    <string name="habit_dialog_category_error">Category is required</string>
+    <string name="habit_dialog_frequency_error">Frequency is required</string>
+    
+    <!-- Mood -->
+    <string name="mood_title">Mood Journal</string>
+    <string name="mood_description">Track your daily mood and emotional well-being</string>
+    <string name="mood_loving">Loving</string>
+    <string name="mood_sad">Sad</string>
+    <string name="mood_romance">Romance</string>
+    <string name="select_a_mood">Please select a mood</string>
+    <string name="selected_mood_format">Mood: %1$s</string>
+    <string name="mood_add">Add Mood</string>
+    <string name="mood_share">Share</string>
+    <string name="mood_share_summary">Share Summary</string>
+    <string name="mood_empty_title">No mood entries yet</string>
+    <string name="mood_empty_description">Tap \'Add Mood\' to start tracking your emotions</string>
+    <string name="mood_coming_soon">😊 Coming Soon!</string>
+    
+    <!-- Mood Dialog -->
+    <string name="mood_dialog_title">How are you feeling?</string>
+    <string name="mood_dialog_select_mood">Select your mood:</string>
+    <string name="mood_dialog_energy_level">Energy Level</string>
+    <string name="mood_dialog_stress_level">Stress Level</string>
+    <string name="mood_dialog_notes_hint">Notes (Optional)</string>
+    <string name="mood_dialog_save">Save Mood</string>
+    <string name="mood_dialog_cancel">Cancel</string>
+    
+    
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_description">Configure your app preferences and account settings</string>
+    <string name="settings_hydration_title">💧 Hydration Reminders</string>
+    <string name="settings_hydration_enable">Enable Reminders</string>
+    <string name="settings_hydration_interval">Reminder Interval</string>
+    <string name="settings_hydration_save">Save Settings</string>
+    <string name="settings_app_info_title">📱 App Information</string>
+    <string name="settings_app_name">FitLife - Health &amp; Wellness Tracker</string>
+    <string name="settings_app_version">Version 1.0.0</string>
+    
+    <!-- Common -->
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Your Daily Wellness Partner</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+	<string name="continue_label">Continue</string>
+    
+    <!-- Onboarding Screen 1 - Habits -->
+    <string name="onboarding_habits_title">Track Your Habits</string>
+    <string name="onboarding_habits_description">Stay on top of your daily wellness habits.</string>
+	<string name="select_at_least_one_habit">Please select at least one habit</string>
+	<string name="selected_habits_format">Selected: %1$s</string>
+    
+    <!-- Onboarding Screen 2 - Mood -->
+    <string name="onboarding_mood_title">Log Your Mood</string>
+    <string name="onboarding_mood_description">Record your moods and reflect on your day.</string>
+    <string name="mood_select_prompt">Choose your mood</string>
+    <string name="mood_reason_prompt">Pick reasons (optional)</string>
+    <string name="reason_food">🍽️ Food</string>
+    <string name="reason_work">💼 Work</string>
+    <string name="reason_sleep">😴 Sleep</string>
+    <string name="reason_exercise">💪 Exercise</string>
+    <string name="reason_family">👨‍👩‍👧 Family</string>
+    <string name="reason_weather">🌤️ Weather</string>
+    <string name="reason_lover">❤️ Lover</string>
+    
+    <!-- Onboarding Screen 3 - Hydration -->
+    <string name="onboarding_hydration_title">Stay Hydrated &amp; Healthy</string>
+    <string name="onboarding_hydration_description">Get hydration reminders and maintain your wellness goals.</string>
+    <string name="food_recommendations_title">Recommended foods to focus on</string>
+    <string name="food_fruits">🍎 Fruits</string>
+    <string name="food_vegetables">🥦 Vegetables</string>
+    <string name="food_protein">🍗 Lean Protein</string>
+    <string name="food_whole_grains">🌾 Whole Grains</string>
+    <string name="food_healthy_fats">🥑 Healthy Fats</string>
+    <string name="food_dairy">🥛 Dairy/Alternatives</string>
+    <string name="hydration_questions_title">Hydration preferences</string>
+    <string name="diet_veg">Veg</string>
+    <string name="diet_non_veg">Non-veg</string>
+    <string name="diet_vegan">Vegan</string>
+    <string name="wellness_goals_prompt">Your primary wellness goals</string>
+    <string name="goal_weight_loss">⚖️ Weight loss</string>
+    <string name="goal_muscle_gain">💪 Muscle gain</string>
+    <string name="goal_energy">⚡ More energy</string>
+    <string name="goal_general_health">🩺 General health</string>
+    <string name="selected_foods_format">Foods: %1$s</string>
+    <string name="selected_diet_format">Diet: %1$s</string>
+    <string name="selected_goals_format">Goals: %1$s</string>
+    <string name="none_label">None</string>
+    
+    <!-- Authentication -->
+    <string name="auth_signin_title">Welcome Back</string>
+    <string name="auth_signup_title">Create Account</string>
+    <string name="auth_subtitle">Sign in to continue your wellness journey</string>
+    <string name="auth_email_hint">Email</string>
+    <string name="auth_password_hint">Password</string>
+    <string name="auth_confirm_password_hint">Confirm Password</string>
+    <string name="auth_signin">Sign In</string>
+    <string name="auth_signup">Sign Up</string>
+    <string name="auth_switch_to_signup">Don\'t have an account? Sign Up</string>
+    <string name="auth_switch_to_signin">Already have an account? Sign In</string>
+    <string name="auth_remember_me">Remember me</string>
+    <string name="auth_email_required">Email is required</string>
+    <string name="auth_password_required">Password is required</string>
+    <string name="auth_password_too_short">Password must be at least 6 characters</string>
+    <string name="auth_password_mismatch">Passwords do not match</string>
+    <string name="auth_signin_success">Signed in successfully</string>
+    <string name="auth_signup_success">Account created successfully</string>
+    <string name="auth_invalid_credentials">Invalid email or password</string>
+    
+    <!-- Sign Up fields -->
+    <string name="signup_name">Full Name</string>
+    <string name="signup_phone">Phone Number</string>
+    <string name="signup_age">Age</string>
+    <string name="signup_diseases">Any known conditions?</string>
+    <string name="disease_diabetes">Diabetes</string>
+    <string name="disease_hypertension">Hypertension</string>
+    <string name="disease_none">None</string>
+    <string name="disease_other">Other (please specify)</string>
+    
+    <!-- Loading -->
+    <string name="loading_title">Loading</string>
+    <string name="loading_subtitle">Setting up your wellness dashboard</string>
+    
+    <!-- Settings Logout -->
+    <string name="settings_logout_title">Sign Out</string>
+    <string name="settings_logout_description">Sign out of your account and return to the login screen</string>
+    <string name="settings_logout">Sign Out</string>
+    <string name="settings_logout_confirm_title">Sign Out</string>
+    <string name="settings_logout_confirm_message">Are you sure you want to sign out?</string>
+    <string name="settings_logout_confirm_yes">Yes, Sign Out</string>
+    
+    <!-- Content Descriptions -->
+    <string name="cd_app_logo">FitLife app logo</string>
+    <string name="cd_onboarding_habits">Workspace with book, coffee cup, and notepad</string>
+    <string name="cd_onboarding_mood">Cute bear and panda eating noodles with chopsticks</string>
+    <string name="cd_onboarding_hydration">Two penguins embracing with hearts and flowers</string>
+    <string name="cd_add_habit">Add new habit</string>
+    <string name="cd_edit_habit">Edit habit</string>
+    <string name="cd_delete_habit">Delete habit</string>
+    <string name="cd_complete_habit">Mark habit as complete</string>
+    <string name="cd_add_mood">Add mood entry</string>
+    <string name="cd_share_mood">Share mood entry</string>
+    <string name="cd_delete_mood">Delete mood entry</string>
+    <string name="cd_share_summary">Share mood summary</string>
+    <string name="cd_hydration_toggle">Toggle hydration reminders</string>
+    <string name="cd_interval_selector">Select reminder interval</string>
+    <string name="cd_save_settings">Save settings</string>
+    
+    <!-- Error Messages -->
+    <string name="error_generic">An error occurred. Please try again.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_validation">Please check your input and try again.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_saved">Saved successfully</string>
+    <string name="success_deleted">Deleted successfully</string>
+    <string name="success_updated">Updated successfully</string>
+</resources>

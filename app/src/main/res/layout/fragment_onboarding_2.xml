@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_light">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="308dp"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/onbording_screen02" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_mood_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_mood_description"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:maxWidth="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mood_select_prompt"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgMoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbLoving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_loving"
+            android:textColor="@color/black"
+            android:layout_marginEnd="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbSad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_sad"
+            android:textColor="@color/black"
+            android:layout_marginEnd="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbRomance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mood_romance"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mood_reason_prompt"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <GridLayout
+        android:id="@+id/reasonsGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginTop="8dp">
+
+        <CheckBox
+            android:id="@+id/reasonFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_food"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonWork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_work"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_sleep"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_exercise"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_family"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_weather"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+
+        <CheckBox
+            android:id="@+id/reasonLover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_lover"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:padding="8dp" />
+    </GridLayout>
+
+</LinearLayout>

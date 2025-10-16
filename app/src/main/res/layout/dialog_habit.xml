@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/background_light">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarHabit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:title="@string/habit_dialog_title"
+            app:navigationIcon="@drawable/ic_close"
+            app:titleCentered="true" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/habit_dialog_title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary_light"
+            android:layout_marginBottom="16dp" />
+        <!-- Content Card for nicer shadow/rounded look -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Habit Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/habit_dialog_name_hint"
+                    app:endIconMode="clear_text"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="@color/text_primary_light">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_habit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:imeOptions="actionNext"
+                        android:minHeight="56dp"
+                        android:textColorHint="@color/text_secondary_light"
+                        android:textColor="@color/text_primary_light" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Description -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/habit_dialog_description_hint"
+                    app:endIconMode="clear_text"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="@color/text_primary_light">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_habit_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLines="4"
+                        android:minHeight="56dp"
+                        android:textColorHint="@color/text_secondary_light"
+                        android:textColor="@color/text_primary_light" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Category -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/habit_dialog_category"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_light"
+                    android:layout_marginBottom="6dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:startIconDrawable="@drawable/ic_mood"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="@color/text_primary_light">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:importantForAutofill="no"
+                        android:minHeight="56dp"
+                        android:hint="Select category"
+                        android:textColorHint="@color/text_secondary_light"
+                        android:textColor="@color/text_primary_light" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Frequency -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/habit_dialog_frequency"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary_light"
+                    android:layout_marginBottom="6dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:startIconDrawable="@drawable/ic_alarm"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="@color/text_primary_light">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/spinner_frequency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:minHeight="56dp"
+                        android:hint="Select frequency"
+                        android:textColorHint="@color/text_secondary_light"
+                        android:textColor="@color/text_primary_light" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Target + Unit Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="8dp">
+
+                    <!-- Target Value -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        android:hint="@string/habit_dialog_target_hint"
+                        app:helperText="1 = once per day"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        app:boxStrokeColor="@color/text_primary_light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_target_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:text="1"
+                            android:minHeight="56dp"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/text_secondary_light"
+                            android:textColor="@color/text_primary_light" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Unit -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/habit_dialog_unit_hint"
+                        app:endIconMode="clear_text"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        app:boxStrokeColor="@color/text_primary_light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edit_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:text="times"
+                            android:minHeight="56dp"
+                            android:imeOptions="actionDone"
+                            android:textColorHint="@color/text_secondary_light"
+                            android:textColor="@color/text_primary_light" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/habit_dialog_cancel"
+                android:textColor="@color/text_secondary_light" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                style="@style/Widget.FitLife.Button.Accent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/habit_dialog_save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,136 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FitLife" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary_teal</item>
+        <item name="colorPrimaryVariant">@color/primary_teal_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/accent_orange</item>
+        <item name="colorSecondaryVariant">@color/accent_orange_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Background Colors -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnBackground">@color/text_primary_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primary_teal_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/primary_teal_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Error Colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/white</item>
+        
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        
+        <!-- Card Colors -->
+        <item name="colorSurfaceVariant">@color/surface_light</item>
+        <item name="colorOutline">@color/text_secondary_light</item>
+    </style>
+
+    <style name="Theme.FitLife" parent="Base.Theme.FitLife" />
+    
+    <!-- Dark Theme -->
+    <style name="Base.Theme.FitLife.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary_teal_light</item>
+        <item name="colorPrimaryVariant">@color/primary_teal</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/accent_orange_light</item>
+        <item name="colorSecondaryVariant">@color/accent_orange</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Background Colors -->
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnBackground">@color/text_primary_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Error Colors -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/white</item>
+        
+        <!-- Text Colors -->
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        
+        <!-- Card Colors -->
+        <item name="colorSurfaceVariant">@color/surface_dark</item>
+        <item name="colorOutline">@color/text_secondary_dark</item>
+    </style>
+    
+    <!-- Custom Widget Styles -->
+    <style name="Widget.FitLife.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/surface_light</item>
+    </style>
+    
+    <style name="Widget.FitLife.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/primary_teal</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    
+    <style name="Widget.FitLife.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Accent filled button (orange) -->
+    <style name="Widget.FitLife.Button.Accent" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/accent_orange</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">96dp</item>
+    </style>
+
+    <!-- Fullscreen dialog theme for form-like dialogs -->
+    <style name="Theme.FitLife.Dialog.Fullscreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/primary_teal_dark</item>
+        <item name="android:navigationBarColor">@color/primary_teal_dark</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.FitLife.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/primary_teal</item>
+        <item name="android:statusBarColor">@color/primary_teal_dark</item>
+        <item name="android:navigationBarColor">@color/primary_teal_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    
+    <!-- Bottom Navigation Active Indicator -->
+    <style name="ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/accent_orange_light</item>
+        <item name="android:width">56dp</item>
+        <item name="android:height">32dp</item>
+    </style>
+</resources>
